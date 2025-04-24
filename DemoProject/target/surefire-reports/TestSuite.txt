@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 20.423 s <<< FAILURE! - in TestSuite
+testScript.LoginTest.browserIntialization[chrome](0)  Time elapsed: 9.365 s  <<< FAILURE!
+java.lang.NullPointerException
+
+testScript.AdminUsersTest.browserIntialization[chrome](0)  Time elapsed: 8.019 s  <<< FAILURE!
+java.lang.NullPointerException
+
