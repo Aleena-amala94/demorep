@@ -14,9 +14,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import Utility.ScreenShotUtility;
-
-//import com.beust.jcommander.Parameters;
-
 import Utility.WaitUtility;
 import constants.Constants;
 
@@ -25,47 +22,45 @@ public class Base {
 	public ScreenShotUtility scrshot;
 	public Properties properties;
 	public FileInputStream fileinputstream;
-	@BeforeMethod(alwaysRun=true)
+	@BeforeMethod(alwaysRun = true)
 	@Parameters("browser")
-	public void browserIntialization(String browser) throws Exception
+	public void browserInitialization(String browser) throws Exception
 	{
-		try {
-			properties=new Properties();
-			fileinputstream=new FileInputStream(Constants.CONFIGFILE);
+		try
+		{
+			properties = new Properties();
+			fileinputstream = new FileInputStream(Constants.CONFIGFILE);
 			properties.load(fileinputstream);
+			
 		}
 		catch(Exception e)
 		{
-			System.out.println("invalid");
+		System.out.println("Invalid");	
 		}
-		
-		if(browser.equalsIgnoreCase("chrome"))
+		if(browser.equalsIgnoreCase("Chrome"))
 		{
-			driver=new ChromeDriver();
+			driver = new ChromeDriver();
 		}
-		else if(browser.equalsIgnoreCase("edge"))
+		else if(browser.equalsIgnoreCase("Edge"))
 		{
-			driver=new EdgeDriver();
+			driver = new EdgeDriver();
 		}
 		else
 		{
-			throw new Exception("invalid browser");
+			throw new Exception("Invalid browser");
 		}
 		//driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 		driver.get(properties.getProperty("url"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICIT_WAIT));
 		driver.manage().window().maximize();
 	}
-@AfterMethod(alwaysRun=true)
-	 public void quit(ITestResult iTestResult) throws IOException 
-{
-	
-	if (iTestResult.getStatus() == ITestResult.FAILURE) 
-	{
-		scrshot = new ScreenShotUtility();
-		scrshot.getScreenShot(driver, iTestResult.getName());
-	}
-driver.quit();
-	}
+	@AfterMethod(alwaysRun=true)
+	public void driverQuit(ITestResult iTestResult) throws IOException {
+		if (iTestResult.getStatus() == ITestResult.FAILURE) {
+			scrshot = new ScreenShotUtility();
+			scrshot.getScreenShot(driver, iTestResult.getName());
+		}
+		driver.quit();
+}
 
 }

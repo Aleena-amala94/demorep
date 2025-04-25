@@ -14,13 +14,6 @@
           <include name="verifyWhetherUserIsAbleToLoginUsingValidCrenditials"/>
         </methods>
       </class> <!-- testScript.LoginTest -->
-      <class name="testScript.AdminUsersTest">
-        <methods>
-          <include name="verifyThatUserIsAbleToSaveUserDeatils"/>
-          <include name="quit"/>
-          <include name="browserIntialization"/>
-        </methods>
-      </class> <!-- testScript.AdminUsersTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

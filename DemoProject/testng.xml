@@ -7,13 +7,11 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-    
-<class name="testScript.LoginTest">
-    <methods><include name="verifyWhetherUserIsAbleToLoginUsingValidCrenditials"></include>
-    
+    <class name="testScript.LoginTest">
+    <methods>
+    <include name="verifyWhetherUserIsAbleToLoginUsingValidCrenditials"></include>
     </methods>
     </class>
-    
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

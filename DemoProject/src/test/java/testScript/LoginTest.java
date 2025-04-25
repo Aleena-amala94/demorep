@@ -7,7 +7,7 @@ import Pages.LoginPage;
 import Utility.ExcelUtility;
 
 public class LoginTest extends Base {
-	@	Test
+	@	Test (groups= {"regression"},retryAnalyzer=retry.Retry.class)
 	public void verifyWhetherUserIsAbleToLoginUsingValidCrenditials() throws Exception
 	{
 		//driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/login");
@@ -23,7 +23,7 @@ public class LoginTest extends Base {
 		boolean isdashboardloaded=loginpage.isHomePageLoaded();
 		Assert.assertTrue(isdashboardloaded);
 	}
-	@Test(groups= {"regression"},retryAnalyzer=retry.Retry.class)
+	@Test
 	public void verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword() throws Exception
 	{
 		//driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/login");
@@ -52,7 +52,6 @@ public class LoginTest extends Base {
 		String username=ExcelUtility.readStringData(3, 0, "loginpage");
 		String password=ExcelUtility.readStringData(3, 1, "loginpage");
 		LoginPage loginpage=new LoginPage(driver);
-		
 		loginpage.enterUserName(username);
 		loginpage.enterPassword(password);
 		loginpage.clickSignin();
