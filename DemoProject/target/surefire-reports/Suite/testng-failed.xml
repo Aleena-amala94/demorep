@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="testScript.LoginTest">
+      <class name="testScript.AdminUsersTest">
         <methods>
-          <include name="quit"/>
-          <include name="browserIntialization"/>
-          <include name="verifyWhetherUserIsAbleToLoginUsingValidCrenditials"/>
+          <include name="driverQuit"/>
+          <include name="verifyThatUserIsAbleToSaveUserDeatils"/>
+          <include name="browserInitialization"/>
         </methods>
-      </class> <!-- testScript.LoginTest -->
+      </class> <!-- testScript.AdminUsersTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

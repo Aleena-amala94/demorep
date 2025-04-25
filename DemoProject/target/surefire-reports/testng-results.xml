@@ -2,15 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-25T10:48:13 IST" name="Suite" finished-at="2025-04-25T10:48:24 IST" duration-ms="10753">
+  <suite started-at="2025-04-25T18:48:58 IST" name="Suite" finished-at="2025-04-25T18:49:02 IST" duration-ms="4627">
     <groups>
-      <group name="regression">
-        <method signature="LoginTest.verifyWhetherUserIsAbleToLoginUsingValidCrenditials()[pri:0, instance:testScript.LoginTest@53045c6c]" name="verifyWhetherUserIsAbleToLoginUsingValidCrenditials" class="testScript.LoginTest"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2025-04-25T10:48:13 IST" name="Test" finished-at="2025-04-25T10:48:24 IST" duration-ms="10753">
-      <class name="testScript.LoginTest">
-        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testScript.LoginTest@53045c6c]" started-at="2025-04-25T10:48:13 IST" name="browserIntialization" finished-at="2025-04-25T10:48:24 IST" duration-ms="10641" status="FAIL">
+    <test started-at="2025-04-25T18:48:58 IST" name="Test" finished-at="2025-04-25T18:49:02 IST" duration-ms="4627">
+      <class name="testScript.AdminUsersTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.AdminUsersTest@663c9e7a]" started-at="2025-04-25T18:48:58 IST" name="browserInitialization" finished-at="2025-04-25T18:49:02 IST" duration-ms="4238" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -26,7 +23,7 @@ at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.jav
 at java.base/java.util.Map.of(Map.java:1365)
 at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
-at testScript.Base.browserIntialization(Base.java:55)
+at testScript.Base.browserInitialization(Base.java:53)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -66,8 +63,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserIntialization -->
-        <test-method signature="verifyWhetherUserIsAbleToLoginUsingValidCrenditials()[pri:0, instance:testScript.LoginTest@53045c6c]" started-at="2025-04-25T10:48:24 IST" name="verifyWhetherUserIsAbleToLoginUsingValidCrenditials" finished-at="2025-04-25T10:48:24 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyThatUserIsAbleToSaveUserDeatils()[pri:0, instance:testScript.AdminUsersTest@663c9e7a]" started-at="2025-04-25T18:49:02 IST" name="verifyThatUserIsAbleToSaveUserDeatils" finished-at="2025-04-25T18:49:02 IST" duration-ms="1" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -76,7 +73,7 @@ at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.jav
 at java.base/java.util.Map.of(Map.java:1365)
 at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
-at testScript.Base.browserIntialization(Base.java:55)
+at testScript.Base.browserInitialization(Base.java:53)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -116,19 +113,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWhetherUserIsAbleToLoginUsingValidCrenditials -->
-        <test-method is-config="true" signature="quit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@53045c6c]" started-at="2025-04-25T10:48:24 IST" name="quit" finished-at="2025-04-25T10:48:24 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- verifyThatUserIsAbleToSaveUserDeatils -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.AdminUsersTest@663c9e7a]" started-at="2025-04-25T18:49:02 IST" name="driverQuit" finished-at="2025-04-25T18:49:02 IST" duration-ms="319" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verifyWhetherUserIsAbleToLoginUsingValidCrenditials()[pri:0, instance:testScript.LoginTest@53045c6c] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=AdminUsersTest.verifyThatUserIsAbleToSaveUserDeatils()[pri:0, instance:testScript.AdminUsersTest@663c9e7a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testScript.LoginTest -->
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testScript.AdminUsersTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

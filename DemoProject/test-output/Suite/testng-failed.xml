@@ -7,17 +7,10 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testScript.AdminUsersTest">
-        <methods>
-          <include name="quit"/>
-          <include name="verifyThatUserIsAbleToSaveUserDeatils"/>
-          <include name="browserIntialization"/>
-        </methods>
-      </class> <!-- testScript.AdminUsersTest -->
       <class name="testScript.LoginTest">
         <methods>
-          <include name="quit"/>
-          <include name="browserIntialization"/>
+          <include name="driverQuit"/>
+          <include name="browserInitialization"/>
           <include name="verifyWhetherUserIsAbleToLoginUsingValidCrenditials"/>
         </methods>
       </class> <!-- testScript.LoginTest -->
