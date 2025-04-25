@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import Pages.LoginPage;
 import Utility.ExcelUtility;
+import constants.Constants;
 
 public class LoginTest extends Base {
 	@	Test 
@@ -21,9 +22,9 @@ public class LoginTest extends Base {
 		loginpage.clickSignin();
 		
 		boolean isdashboardloaded=loginpage.isHomePageLoaded();
-		Assert.assertTrue(isdashboardloaded);
+		Assert.assertTrue(isdashboardloaded,"homepage is loaded with incorrect password");
 	}
-	@Test(groups= {"regression"},retryAnalyzer=retry.Retry.class)
+	@Test(groups= {"regression"},retryAnalyzer=retry.Retry.class,description="")
 	public void verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword() throws Exception
 	{
 		//driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/login");
@@ -39,7 +40,7 @@ public class LoginTest extends Base {
 		loginpage.clickSignin();
 		loginpage.redAlert();
 		boolean alert=loginpage.redAlert();
-		Assert.assertTrue(alert);
+		Assert.assertTrue(alert,Constants.INCORRECTPASSWORD);
 		
 		
 	}

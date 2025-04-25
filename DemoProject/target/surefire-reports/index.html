@@ -103,7 +103,7 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.AdminUsersTest" class="method navigator-link" hash-for-method="verifyThatUserIsAbleToSaveUserDeatils">verifyThatUserIsAbleToSaveUserDeatils</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testScript.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginUsingValidCrenditials">verifyWhetherUserIsAbleToLoginUsingValidCrenditials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">testScript.AdminUsersTest</span>
+              <span class="class-name">testScript.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyThatUserIsAbleToSaveUserDeatils">
-                  </a> <!-- verifyThatUserIsAbleToSaveUserDeatils -->
-                  <span class="method-name">verifyThatUserIsAbleToSaveUserDeatils</span>
+                  <a name="verifyWhetherUserIsAbleToLoginUsingValidCrenditials">
+                  </a> <!-- verifyWhetherUserIsAbleToLoginUsingValidCrenditials -->
+                  <span class="method-name">verifyWhetherUserIsAbleToLoginUsingValidCrenditials</span>
                   <div class="stack-trace">java.lang.NullPointerException
 	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
 	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1112)
@@ -159,11 +159,11 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScript.AdminUsersTest&quot;&gt;
+      &lt;class name=&quot;testScript.LoginTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyThatUserIsAbleToSaveUserDeatils&quot;/&gt;
+          &lt;include name=&quot;verifyWhetherUserIsAbleToLoginUsingValidCrenditials&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testScript.AdminUsersTest --&gt;
+      &lt;/class&gt; &lt;!-- testScript.LoginTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -205,14 +205,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyThatUserIsAbleToSaveUserDeatils')
-data.setCell(0, 2, 'testScript.AdminUsersTest')
-data.setCell(0, 3, 1);
+data.setCell(0, 1, 'verifyWhetherUserIsAbleToLoginUsingValidCrenditials')
+data.setCell(0, 2, 'testScript.LoginTest')
+data.setCell(0, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -227,9 +227,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testScript.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginUsinginCorrectUsernameAndincorrectPassword</span>
+                <br/>
+                <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword</span>
+                <br/>
+                <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginUsinginCorrectUsernameAndcorrectPassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -238,7 +249,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScript.AdminUsersTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScript.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
@@ -246,8 +257,8 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name={null} status=CREATED method=AdminUsersTest.verifyThatUserIsAbleToSaveUserDeatils()...)</span>
-                <span class="method-start">4268 ms</span>
+                <span class="method-name">driverQuit([TestResult name={null} status=CREATED method=LoginTest.verifyWhetherUserIsAbleToLoginUsingValidCren...)</span>
+                <span class="method-start">8789 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
